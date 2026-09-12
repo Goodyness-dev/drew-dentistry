@@ -1,0 +1,158 @@
+export const SERVICES = [
+  {
+    id: 'cavity-treatment-fillings',
+    title: 'Cavity Treatment & Composite Fillings',
+    category: 'General Dentistry',
+    subType: 'Cavity treatment',
+    description: 'Painless removal of dental decay with durable, natural tooth-colored composite resin fillings that blend seamlessly with your smile.',
+    icon: 'Tooth',
+    popular: true,
+  },
+  {
+    id: 'crown-cleaning-maintenance',
+    title: 'Crown Cleaning & Restoration Care',
+    category: 'General Dentistry',
+    subType: 'Crown cleaning',
+    description: 'Expert cleaning, margin inspection, and professional polish of existing dental crowns, bridges, and implant caps to extend longevity.',
+    icon: 'Crown',
+    popular: true,
+  },
+  {
+    id: 'comprehensive-dental-exams',
+    title: 'Comprehensive Dental Exams & 3D Imaging',
+    category: 'General Dentistry',
+    subType: 'Dental exams',
+    description: 'Dr. Drew is renowned for meticulous, unhurried dental examinations, digital low-radiation x-rays, oral cancer screening, and clear treatment plans.',
+    icon: 'Scan',
+    popular: true,
+  },
+  {
+    id: 'dental-sealant-application',
+    title: 'Dental Sealant Application',
+    category: 'Pediatric & Family',
+    subType: 'Dental sealant application',
+    description: 'Protective medical resin coating applied to the deep grooves of molars to shield teeth from decay-causing food particles and acids.',
+    icon: 'Shield',
+    popular: true,
+  },
+  {
+    id: 'tooth-filling-repair',
+    title: 'Tooth Filling Replacement or Repair',
+    category: 'General Dentistry',
+    subType: 'Tooth filling replacement',
+    description: 'Gentle replacement of old, cracked silver amalgam fillings with strong, biocompatible white composite resin.',
+    icon: 'Wrench',
+    popular: false,
+  },
+  {
+    id: 'root-canal-therapy',
+    title: 'Root Canal Therapy (Endodontics)',
+    category: 'Endodontics & Surgery',
+    subType: 'Endodontics',
+    description: 'Gentle, pain-relieving therapy that saves natural teeth infected by deep decay or trauma, performed with precision modern rotary instruments.',
+    icon: 'HeartPulse',
+    popular: true,
+  },
+  {
+    id: 'in-house-oral-surgery',
+    title: 'In-House Oral Surgery & Extractions',
+    category: 'Endodontics & Surgery',
+    subType: 'Oral surgery',
+    description: 'Convenient surgical extractions, wisdom teeth care, and pre-prosthetic procedures performed right in our Casa Grande suite without external referrals.',
+    icon: 'Cross',
+    popular: true,
+  },
+  {
+    id: 'emergency-dental-relief',
+    title: 'Emergency Toothache & Dental Relief',
+    category: 'Emergency Care',
+    subType: 'Emergency care',
+    description: 'Rapid, same-day attention for acute tooth pain, knocked-out teeth, broken crowns, dental abscesses, and sudden holiday incidents.',
+    icon: 'Ambulance',
+    popular: true,
+  },
+  {
+    id: 'cosmetic-teeth-whitening',
+    title: 'Professional Teeth Whitening',
+    category: 'Cosmetic Dentistry',
+    subType: 'Cosmetic whitening',
+    description: 'In-office power bleaching and custom take-home whitening trays that lift years of coffee, tea, and age discoloration safely.',
+    icon: 'Sparkles',
+    popular: true,
+  },
+  {
+    id: 'porcelain-veneers-makeover',
+    title: 'Porcelain Veneers & Smile Makeovers',
+    category: 'Cosmetic Dentistry',
+    subType: 'Veneers',
+    description: 'Custom handcrafted porcelain shells bonded to the front of teeth to correct chips, gaps, alignment, and persistent discoloration.',
+    icon: 'Smile',
+    popular: false,
+  },
+  {
+    id: 'gentle-hygiene-cleaning',
+    title: 'Gentle Dental Hygiene & Prophylaxis',
+    category: 'Pediatric & Family',
+    subType: 'Teeth cleaning',
+    description: 'Experience hygienist Erica’s legendary gentle touch! Pain-free ultrasonic tartar removal, plaque polish, and revitalizing fluoride rinse.',
+    icon: 'Sparkle',
+    popular: true,
+  },
+  {
+    id: 'in-house-savings-plan',
+    title: 'In-House Dental Savings Plan Consultation',
+    category: 'General Dentistry',
+    subType: 'Savings plan',
+    description: 'Affordable yearly membership for patients without dental insurance: includes 2 free cleanings, x-rays, exams, and 20% off all major dental work.',
+    icon: 'BadgePercent',
+    popular: true,
+  }
+];
+
+export const SERVICE_CATEGORIES = [
+  'All Services',
+  'General Dentistry',
+  'Emergency Care',
+  'Endodontics & Surgery',
+  'Cosmetic Dentistry',
+  'Pediatric & Family',
+];
+
+export const DEPARTMENTS = [
+  {
+    id: 'emergency-care',
+    name: 'Emergency Care',
+    subtitle: 'Urgent Toothache & Trauma Relief',
+    description: 'Rapid same-day diagnosis and prompt relief for severe tooth pain, chipped teeth, and infections.',
+    badge: 'Same-Day Priority',
+    color: 'emerald',
+    iconType: 'emergency'
+  },
+  {
+    id: 'pediatric-family',
+    name: 'Pediatric Department',
+    subtitle: 'Gentle Smiles for Kids & Teens',
+    description: 'Compassionate, kid-friendly cleanings, sealants, fluoride treatments, and warm puppy love!',
+    badge: 'Family Friendly',
+    color: 'teal',
+    iconType: 'pediatric'
+  },
+  {
+    id: 'endodontics-surgery',
+    name: 'Endodontics & Surgery',
+    subtitle: 'Root Canals & In-House Surgery',
+    description: 'Advanced root canals and surgical extractions performed with precision state-of-the-art equipment.',
+    badge: 'In-House Suite',
+    color: 'cyan',
+    iconType: 'endodontics'
+  },
+  {
+    id: 'cosmetic-dentistry',
+    name: 'Cosmetic Dentistry',
+    subtitle: 'Brighten & Transform Your Smile',
+    description: 'Professional teeth whitening, custom porcelain veneers, and seamless cosmetic bonding.',
+    badge: 'Smile Makeover',
+    color: 'sky',
+    iconType: 'cosmetic'
+  }
+];

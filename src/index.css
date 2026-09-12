@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+  
+  html.dark {
+    color-scheme: dark;
+    background-color: #000000 !important;
+  }
+
+  body {
+    @apply bg-[#f3f9fb] text-slate-900 antialiased overflow-x-hidden transition-colors duration-200;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  html.dark body {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+  }
+
+  /* Clean scrollbar */
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f5f9;
+  }
+  html.dark ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+  }
+  html.dark ::-webkit-scrollbar-thumb {
+    background: #262626;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+  }
+  html.dark ::-webkit-scrollbar-thumb:hover {
+    background: #404040;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 20px 45px -10px rgba(18, 95, 110, 0.07);
+  }
+
+  .glass-pill {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 30px -5px rgba(22, 100, 110, 0.08);
+  }
+
+  .card-clay {
+    background-color: #ffffff;
+    border-radius: 1.75rem;
+    border: 1px solid rgba(226, 240, 245, 0.9);
+    box-shadow: 0 15px 35px -10px rgba(20, 100, 115, 0.07), 0 0 0 1px rgba(255, 255, 255, 0.8);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .card-clay:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 22px 45px -10px rgba(20, 100, 115, 0.13), 0 0 0 1px rgba(255, 255, 255, 1);
+  }
+
+  .btn-teal {
+    background: linear-gradient(135deg, #20a89d 0%, #118a80 100%);
+    color: #ffffff;
+    box-shadow: 0 10px 25px -4px rgba(26, 150, 140, 0.38);
+    transition: all 0.2s ease-in-out;
+  }
+  .btn-teal:hover {
+    background: linear-gradient(135deg, #18988e 0%, #0d7970 100%);
+    box-shadow: 0 14px 28px -3px rgba(26, 150, 140, 0.48);
+  }
+}
